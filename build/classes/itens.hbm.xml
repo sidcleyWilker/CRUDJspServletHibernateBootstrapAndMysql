@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping package="com.sidcleywilker.model">
+   <class name = "Item" table = "item">
+   		<id name = "itemId" type = "int" column = "id">
+         	<generator class="native"/>
+      	</id>
+      	
+      	<property name = "itemName" column = "name" type = "string"/>
+      	<property name = "itemPrice" column = "price" type = "double"/>
+      	<property name = "itemQuantity" column = "quantity" type = "int"/>
+   </class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+CREATE DATABASE sidcley;
+
+CREATE TABLE item(
+    
+    id int not null AUTO_INCREMENT,
+    name varchar(50),
+    price double,
+    quantity int,
+    PRIMARY KEY (id)  
+    
+);
